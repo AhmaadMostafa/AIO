@@ -143,7 +143,7 @@ Version:	1.1
 .slider .single-slider{
 	position:relative;
 }
-.slider .single-slider:before{
+/* .slider .single-slider:before{
 	position:absolute;
 	content:"";
 	left:0;
@@ -152,7 +152,7 @@ Version:	1.1
 	width:100%;
 	background:#fff;
 	opacity:0.5;
-}
+} */
 .slider .single-slider h1 {
 	font-size: 28px;
 	font-weight: 600;

@@ -87,13 +87,13 @@ body{
 	color: #1A76D1;
 	font-size: 15px;
 }
-.pro-features .button{}
+/* .pro-features .button{} */
 .pro-features .button .btn {
 	width: 100%;
 	text-align: center;
 	margin-top: 8px;
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	font-size: 13px;
 	width: 100%;
 	text-transform: capitalize;
@@ -120,9 +120,9 @@ body{
 	cursor: pointer;
 	box-shadow: -4px 0px 5px #00000036;
 }
-.get-pro:hover{
+/* .get-pro:hover{
 	
-}
+} */
 #scrollUp {
 	bottom: 15px;
 	right: 15px;
@@ -491,7 +491,7 @@ body{
 /* Right Bar */
 .header.style2 .main-menu{
 	display:inline-block;
-	float:left;
+	/* float:left; */
 }
 .header .right-bar {
 	float: right;
@@ -598,6 +598,18 @@ body{
 	background-position: center;
 	background-repeat:no-repeat;
 }
+
+.slider .single-slider:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#fff;
+	opacity:0.5;
+}
+
 .slider .single-slider .text{
 	margin-top:120px;
 }
@@ -605,7 +617,7 @@ body{
 	margin-top:150px;
 }
 .slider .single-slider h1 {
-	color: #2C2D3F;
+	color: #2C2D3F  ;
 	font-size: 38px;
 	font-weight: 700;
 	margin: 0;

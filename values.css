@@ -1,46 +1,67 @@
-.values {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.value-card {
-    background-color: white;
+.custom-header {
+    color: #C9C9C9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: fit-content;
 }
 
-.value-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.custom-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-.value-card img {
-    width: 60px;
-    margin-bottom: 20px;
+.custom-cards.show {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-.value-card h2 {
-    color: #3A3A3A;
+.custom-card {
+    background: #1d2b3a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.custom-card:hover {
+    transform: scale(1.05);
+}
+.custom-icon {
+    background: white;
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.h2-class {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin: 10px 0;
 }
-
-.value-card p {
-    color: #3A3A3A;
-    
+p {
+    color: #ddd;
 }
-
-.values a{
-    color: inherit;
-    text-decoration: none;
+@media (max-width: 768px) {
+    .custom-card {
+        width: 200px;
+    }
 }
-.values a:hover{
-    color: inherit;
-    text-decoration: none;
+@media (max-width: 480px) {
+    .custom-card {
+        width: 100%;
+        margin: 0;
+    }
+    .custom-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 }

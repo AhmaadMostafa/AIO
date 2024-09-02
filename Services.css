@@ -6,9 +6,8 @@ body {
 }
 
 .services {
-    background-color: #111222;
-    color: #ffffff;
-    padding: 50px 0;
+    color: #C9C9C9;
+    padding: 50px 0 0 0 ;
     text-align: center;
 }
 .services .container h2{
@@ -62,25 +61,22 @@ body {
     left: 50%; /* Centers the button horizontally */
     transform: translate(-50%, -50%); /* Adjusts for the button’s own size */
     padding: 10px 20px;
-    background-color: #0f60a7; 
+    background-color: #1a76d1; 
     color: #ffffff; 
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
     opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
+.learn-more:hover{
+    background-color: #0E46A3;
+}
 .service-item:hover .learn-more {
     color: #ffffff;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.05);
-}
-
-
-.learn-more:hover {
-    background: linear-gradient(45deg, #073a7c 0%, #1767ad 60%, #255b8e 100%);
-    text-decoration: none; 
 }
 
 .service-item h3 {
