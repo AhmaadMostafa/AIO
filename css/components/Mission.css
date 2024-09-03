@@ -1,0 +1,139 @@
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 20px 100px;
+    margin-bottom: 20%;
+}
+
+.main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    position: relative;
+}
+
+
+.image2 {
+    width: 100%;
+    margin-bottom: 10px; 
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.image-text-wrapper {
+    display: flex;
+    flex-direction: column; 
+    max-width: 800px;
+    position: relative;
+}
+
+.Mission-h3 {
+    color: #1a76d1;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.underline {
+    width: 50px;
+    height: 2px;
+    background-color: #1a76d1;
+    border: none;
+    margin: 10px 0;
+}
+
+.Mission-p {
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.content .image2 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.content .image2 img {
+    z-index: 111;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-box {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.text-box2 {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: -40px;
+    text-align: left;
+    position: absolute;
+    bottom: -150px; 
+    left: 70%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px); 
+}
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row; 
+    }
+
+    .content .text-box {
+        transform: translate(-60px, 0);
+    }
+}
+
+@media (max-width: 767px) {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .image-text-wrapper {
+            margin-bottom: 60px; 
+            position: relative;
+        }
+        .container2 .image2{
+            margin-bottom: -100px;
+        }
+        .text-box, .text-box2 {
+            max-width: 100%;
+            text-align: center;
+            position: relative;
+            margin-top: 190px;
+        }
+
+        .text-box2 {
+            left: 50%;
+            position: relative;
+            margin-top: -20px; 
+        }
+} 
